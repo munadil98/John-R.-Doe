@@ -1,0 +1,172 @@
+:root {
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --primary: #1d4ed8;
+  --border: #dbe3ef;
+  --danger: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list a,
+.admin-link {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+}
+
+.menu-list a.active,
+.menu-list a:hover,
+.admin-link:hover {
+  background: #e7eeff;
+  color: var(--primary);
+}
+
+main {
+  width: min(1000px, 95vw);
+  margin: 1.5rem auto 3rem;
+}
+
+.hero,
+.content-card,
+.admin-card,
+.section-editor {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.hero {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-sections {
+  display: grid;
+  gap: 1rem;
+}
+
+.content-card {
+  padding: 1rem 1.25rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.2rem;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.admin-main {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-card {
+  padding: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select,
+button,
+.rich-editor {
+  font: inherit;
+}
+
+input,
+textarea,
+select,
+.rich-editor {
+  width: 100%;
+  padding: 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.rich-editor {
+  min-height: 120px;
+}
+
+button {
+  width: fit-content;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+
+button.danger {
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.section-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.section-editor {
+  padding: 0.8rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.section-controls,
+.admin-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
