@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BusinessPro Admin Panel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="admin-page">
+  <header class="site-header">
+    <div class="brand">BusinessPro Admin</div>
+    <nav>
+      <ul class="menu-list">
+        <li><a href="index.html">View Website</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <h1>Website Content Management</h1>
+
+    <section class="admin-card">
+      <h2>Global Settings</h2>
+      <label>Business Name
+        <input id="businessNameInput" type="text" />
+      </label>
+      <label>Hero Title
+        <input id="heroTitleInput" type="text" />
+      </label>
+      <label>Hero Subtitle
+        <textarea id="heroSubtitleInput" rows="3"></textarea>
+      </label>
+      <label>Footer Text
+        <input id="footerTextInput" type="text" />
+      </label>
+      <button id="saveGlobalBtn" type="button">Save Global Settings</button>
+    </section>
+
+    <section class="admin-card">
+      <h2>Manage Pages & Sections</h2>
+      <label>Select Page
+        <select id="pageSelect"></select>
+      </label>
+
+      <div id="sectionList" class="section-list"></div>
+
+      <div class="admin-actions">
+        <button id="addSectionBtn" type="button">Add Section</button>
+        <button id="savePageBtn" type="button">Save Selected Page</button>
+        <button id="resetBtn" type="button">Reset to Default</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="site-data.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
