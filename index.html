@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John R. Doe | Portfolio</title>
+  <meta name="description" content="Portfolio website for John R. Doe — projects, skills, and contact information." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <h1 class="logo">John R. Doe</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-content container">
+      <p class="eyebrow">Portfolio Website</p>
+      <h2>Building useful products with clean, maintainable code.</h2>
+      <p>
+        I design and ship web experiences focused on performance, accessibility,
+        and user value.
+      </p>
+      <a class="btn" href="#projects">View Projects</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section container">
+      <h3>About Me</h3>
+      <p>
+        I'm John R. Doe, a developer focused on modern web applications. I enjoy
+        solving business problems with thoughtful UX and reliable engineering.
+      </p>
+      <div class="chips">
+        <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>UI/UX</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h3>Featured Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Analytics Dashboard</h4>
+          <p>Interactive KPI dashboards with real-time filters and role-based access.</p>
+        </article>
+        <article class="card">
+          <h4>E-commerce Storefront</h4>
+          <p>Fast and responsive storefront with optimized checkout conversion paths.</p>
+        </article>
+        <article class="card">
+          <h4>Content Platform</h4>
+          <p>SEO-ready publishing platform with editorial workflows and media management.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:john@example.com">john@example.com</a></p>
+      <p>LinkedIn: <a href="#" aria-label="LinkedIn profile">linkedin.com/in/johndoe</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> John R. Doe. All rights reserved.</p>
+    <p class="domain">Configured subdomain: <strong>john-r-doe.yourdomain.com</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
